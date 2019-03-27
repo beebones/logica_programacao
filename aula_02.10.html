@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lógica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <h1>Lógica de programação com Javascript</h1>
+    </body>
+    <script>    
+        var campo1 = prompt('digite um número');
+        numero1 =  parseFloat(campo1);        
+        var campo2 = prompt('digite outro número');
+        numero2 = parseFloat(campo2);        
+        var media = (numero1 + numero2) / 2;
+        // if (media > 5 && numero1 > 0 && numero2 > 0) {
+        //     alert("Parabéns! Você foi aprovado");
+        // } else {
+        //     alert("Descupe, mas não foi dessa vez");
+        // }
+        if (numero1 === 0 || numero2 === 0 || media <= 5) {
+            alert("Desculpe, não foi dessa vez");
+        } else {
+            alert("Parabéns! Você foi aprovado");
+        }
+    </script>
+</html>
