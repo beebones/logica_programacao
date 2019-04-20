@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lógica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <h1>Lógica de programação com Javascript</h1>
+    </body>
+    <script>
+        var ano = 1004;
+        //repita até 2030
+        while(ano <= 2030) {
+            //só irá imprimir quando for ano bissexto
+            if (ano % 4 == 0 && ((ano % 100 != 0) || (ano % 400 == 0))) {
+                document.write("ano bissexto: " + ano + "<br>");
+            }
+            //incrementação do índice ano
+            ano = ano + 4;
+        }
+    </script>
+</html>
