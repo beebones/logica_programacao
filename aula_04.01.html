@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lógica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+        <button onclick="mostrarTabuada()">Criar Tabuada</button>
+        <button onclick="limparTabuada()">Limpar Tabuada</button>
+        <div id="output"></div>
+        <script>
+            var mensagem = '';
+            function mostrarTabuada(){
+                var numero1 = prompt('digite um número de 1 a 1000');
+                limparTabuada();
+
+                numero1 = parseInt(numero1);
+
+                var indice = 1;
+
+                while(indice <= 10) {
+                    mensagem += numero1 + ' x ' + indice + ' = ' + (numero1 * indice) + ' <br>';
+                    indice++;
+                }
+                output.innerHTML = mensagem;
+            }
+
+            function limparTabuada(){
+                mensagem = '';
+                output.innerHTML = mensagem;
+            }
+            
+            var output = document.querySelector('#output');
+
+        </script>
+    </body>
+</html>
