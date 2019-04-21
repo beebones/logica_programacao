@@ -5,22 +5,23 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <h1>Lógica de programação com Javascript</h1>
-    </body>
-    <script>
-        var numero = prompt('digite um número');
-        numero = parseInt(numero);
-        
-        var indice = 1;
-        //repita até que indice seja <= 1000
+        <h1>Lógica de programação com Javascript</h1> 
+        <script>
+            var numero = prompt('digite um número');
+            numero = parseInt(numero);
+            
+            var indice = 1;
+            //repita até que indice seja <= 1000
 
-        while(indice <= 1000) {
-            document.write( numero + ' x '+ indice +' = '+(numero * indice) +' <br>');
-            if (indice % 10 === 0) {
-                document.write('<hr>');
+            while(indice <= 1000) {
+                document.write(numero + ' x '+ indice +' = '+(numero * indice) +' <br>');
+                if (indice % 10 === 0) {
+                    document.write('<hr>');
+                }
+
+                indice = indice + 1;
             }
-
-            indice = indice + 1;
-        }
-        document.write('saiu do loop');
-    </script>
+            document.write('saiu do loop');
+        </script>
+    </body>
+</html>
