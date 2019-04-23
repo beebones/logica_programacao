@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lógica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+        <button onclick="somar()">+</button>
+        <button onclick="subtrair()">-</button>
+        <button onclick="multiplicar()">*</button>
+        <button onclick="dividir()">/</button>
+        <div id="output"></div>
+        <script>    
+            var resultado = pedirNumero();
+            var numero = 0;
+            imprimirNumero(resultado);
+
+            //função que pede um número e retorna um int
+            function pedirNumero() {
+                return parseInt(prompt("digite um número"));
+            }
+
+            function imprimirNumero(numero) {
+                output.innerHTML = numero;
+            }
+
+            function somar() {
+                // resultado += pedirNumero();
+                numero = pedirNumero();
+                resultado = resultado + numero;                
+                imprimirNumero(resultado);
+                // imprimirNumero(resultado += pedirNumero());
+            }
+
+            function subtrair() {
+                numero = pedirNumero();
+                resultado = resultado - numero;
+                imprimirNumero(resultado);
+            }
+
+            function multiplicar() {
+                numero = pedirNumero();
+                resultado = resultado * numero;
+                imprimirNumero(resultado);
+            }
+
+            function dividir() {
+                numero = pedirNumero();
+                resultado = resultado / numero;
+                imprimirNumero(resultado);
+            }
+
+        </script>
+    </body>
+</html>
